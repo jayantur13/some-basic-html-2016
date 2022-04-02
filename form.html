@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>HTML Forms</title>
+</head>
+<body>
+<form>
+<table border="0" cellspacing="10" cellpadding="0" align="center" width="500" height="300"> 
+  <tr style="background-color:#336699;color:#ffffff;">
+  <td colspan="2"><h2>Registration Form:</h2></td>
+  </tr>
+  <tr>
+  <td>Username:</td>
+  <td><input type="text" name="txtusername" value="" placeholder="Enter username" maxlength="10" required></td>
+  </tr>
+  <tr>
+  <tr>
+  <td>Address:</td>
+  <td>
+  <textarea name="txtaddress" cols="20" rows="10"></textarea>
+  </td>
+  </tr>
+  <td>Email:</td>
+  <td><input type="email" name="txtmail" value="" placeholder="Enter mail" required></td>
+  </tr>
+  <tr>
+  <td>Password:</td>
+  <td><input type="password" name="txtpassword" value="" placeholder="Enter password" maxlength="15" required></td>
+  </tr>
+  <tr>
+  <td>Gender:</td>
+  <td><input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female</td><!----Same name enables one selection,for one already selected use checked in that tag---->
+  </tr>
+  <tr>
+  <td>Date of birth:</td>
+  <td><input type="date" name="txtdate"></td>
+  </tr><!-------Used in html only---------------->
+  <tr>
+  <td>Lucky number:</td>
+  <td><input type="number" name="txtnumber"></td>
+  </tr>
+  <tr>
+  <td>Reference:</td>
+  <td><select name="Select Ref"><!--Multiple selection,ctrl+left click,do,multiple in seslect tag----->
+  <option>Internet</option>
+  <option>Friends</option>
+  <option>Newspaper</option><!---For one already selected use selected in that tag---->
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Hobbies:</td>
+  <td><select name="Select Hobby" multiple>
+  <option>Singing</option>
+  <option>Painting</option>
+  <option>Dancing</option>
+  <option>Swimming</option>
+  <option>Cooking</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Fav. App</td>
+  <td>
+  <input type="checkbox" name="one">Whatsapp<br>
+  <input type="checkbox" name="two">Facebook<br>
+  <input type="checkbox" name="three">Twitter<br>
+  <input type="checkbox" name="four">Google+<br>
+  <input type="checkbox" name="oth">Others<br>
+  </td>
+  </tr>
+  <tr>
+   <td>Upload photo:</td>
+   <td><input type="file" name="fileupload"></td>
+   </tr>
+   <tr>
+  <td colspan="2" align="center">
+  <input type="submit" name="btnsubmit" value="Save" style="background-color:#336699;color:#ffffff;">
+  <input type="reset" name="btnclear" value="Clear" style="background-color:#336699;color:#ffffff;">
+  <input type="button" name="btnbutton" value="Click" style="background-color:#336699;color:#ffffff;"><!----Can be used to change color,font size etc.------>
+  </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
